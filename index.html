@@ -1,63 +1,22 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Cards</title>
-	<meta content="width=device-width" name="viewport">
-	<meta content="yes" name="mobile-web-app-capable">
-	<meta content="yes" name="apple-mobile-web-app-capable">
-	<link href="./css/style.css" media="all" rel="stylesheet" type="text/css">
-	<link href="./css/generic.css" media="all" rel="stylesheet" type="text/css">
-	<link href="./css/togglable.css" media="all" rel="stylesheet" type=
-	"text/css">
-</head>
-<body>
-	<div id="screen">
-		<div id="menu">
-			<button id="menuButton">&lt;</button>
-			<h2 id="pageTitle"></h2>
-		</div>
-		<div class="contentScreen" id="setScreen">
-			<div class="innerContent" id="sets">
-				<h2 id="deckName"></h2>
-			</div>
-			<footer class="footer" id="setsFooter">
-				<button class="footerButton right" disabled id="startButton">Start</button>
-			</footer>
-		</div>
-		<div class="contentScreen" id="quizScreen" style="display: none;">
-			<div id="quizProgress">
-				<div id="quizProgressBar"></div>
-			</div>
-			<div class="innerContent" id="quiz">
-				<div id="singleCard">
-					<p id="cardFront"></p>
-					<div data-hidden="true" id="hiddenCard">
-						<p id="hiddenText">Show</p>
-						<p id="cardBack"></p>
-					</div>
-				</div>
-				<div id="multiCard">
-					<h2 id="multiName"></h2>
-					<div id="multiCards"></div>
-				</div>
-			</div>
-			<footer class="footer" id="quizFooter">
-				<button class="footerButton right" disabled id="correctButton">I was
-				right!</button> <button class="footerButton" disabled id="wrongButton">I was
-				wrong!</button>
-			</footer>
-		</div>
-	</div>
-	<script src="./js/shuffle.js" type="text/javascript">
-	</script> 
-	<script src="./js/Togglable.js" type="text/javascript">
-	</script> 
-	<script src="./js/spanish.js" type="text/javascript">
-	</script> 
-	<script src="./js/english.js" type="text/javascript">
-	</script> 
-	<script src="./js/cards.js" type="text/javascript">
-	</script> 
-</body>
+    <head>
+        <title>Flashcards</title>
+        <script type="text/javascript" src="shuffle.js"></script>
+        <script type="text/javascript" src="cards.js"></script>
+        <link rel="./css/style.css" type="text/css" href="style.css"/>
+    </head>
+    <body onload="buildSetsScreen(spanishCards)">
+        <div id="setScreen">
+            <h1 id="pageTitle"></h1>
+            <div id="score">0</div>
+            <div id="question"></div>
+            <div id="answer"></div>
+            <div id="setList"></div>
+            <div id="setsFooter"></div>
+            <button id="startButton"></button>
+            <button id="next"></button>
+            <button id="prev"></button>
+            <button id="finish"></button>
+        </div>
+    </body>
 </html>
