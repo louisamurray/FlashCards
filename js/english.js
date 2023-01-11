@@ -1,5 +1,5 @@
 var englishCards = {
-	name: "Spamish - English",
+	name: "Spanish - English",
 	sets: [ {
 		name: "Level 1",
 		cards: [
