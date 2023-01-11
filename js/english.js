@@ -1,13 +1,11 @@
-var englishCards = {
-	name: "English - Spanish",
+var spanishCards = {
+	name: "Spamish - English",
 	sets: [ {
 		name: "Level 1",
 		cards: [
-			[ "The cars are new.", "Los coches son nuevos." ],
-			[ "How are you?", "¿Cómo estás?" ],
-			[ "Catalonia Square is in the center of Barcelona.",
-				"La plaza de Cataluña está en el centro de Barcelona."
-],
+			[ "Los coches son nuevos.", "The cars are new." ],
+			[ "¿Cómo estás?", "How are you?" ],
+			[ "La plaza de Cataluña está en el centro de Barcelona.", "Catalonia Square is in the center of Barcelona."],
 			[ "Switzerland is a beautiful country.", "Suiza es un país bonito." ],
 			[ "With me", "Conmigo" ],
 			[ "Elena lives in Barcelona.", "Elena vive en Barcelona." ],

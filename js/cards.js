@@ -1,4 +1,4 @@
-buildSetsScreen(spanishCards);
+buildSetsScreen(spanishCards, englishCards);
 
 var selectedCards = [];
 
