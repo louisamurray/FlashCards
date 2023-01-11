@@ -4,7 +4,7 @@ var selectedCards = [];
 
 function buildSetsScreen(cards){
 	
-	document.getElementById("pageTitle").innerHTML = "Select Card Decks";
+	document.getElementById("pageTitle").innerHTML = "Select Flash Card Decks";
 	var deckNameHeader = document.getElementById("deckName");
 	deckNameHeader.innerHTML = cards.name;
 	var setsScreen = document.getElementById("sets");
