@@ -1,4 +1,4 @@
-var spanishCards = {
+var englishCards = {
 	name: "Spamish - English",
 	sets: [ {
 		name: "Level 1",
